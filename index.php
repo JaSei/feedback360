@@ -42,6 +42,7 @@
         DB::$user = DB_USER;
         DB::$password = DB_PASSWORD;
         DB::$dbName = DB_DATABASE_NAME;
+        DB::$host = DB_HOST;
         DB::$encoding = 'utf8';
         DB::$error_handler = false;
         DB::$throw_exception_on_error = true;
