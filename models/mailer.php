@@ -4,7 +4,7 @@ require __DIR__ . '/../vendor/swiftmailer/swiftmailer/lib/swift_required.php';
 
 function mailer_setup()
 {
-    $transport = Swift_SmtpTransport::newInstance('smtp.mandrillapp.com', 587)
+    $transport = Swift_SmtpTransport::newInstance(EMAIL_SMTP_SERVER, EMAIL_SMTP_PORT)
         ->setUsername(EMAIL_USER_NAME)
         ->setPassword(EMAIL_PWD);
     return Swift_Mailer::newInstance($transport);
