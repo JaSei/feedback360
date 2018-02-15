@@ -14,7 +14,7 @@ services:
             MYSQL_DATABASE: db
             MYSQL_ROOT_PASSWORD: admin
         volumes:
-            - ./db:/tmp/db
+            - ./db:/docker-entrypoint-initdb.d
 
     web:
         image: nginx:latest
